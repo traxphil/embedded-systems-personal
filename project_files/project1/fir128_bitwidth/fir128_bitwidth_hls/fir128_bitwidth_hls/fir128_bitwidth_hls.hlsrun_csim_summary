@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir128_bitwidth_hls/fir128_bitwidth_hls/fir128_bitwidth_hls.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Oct 13 04:24:27 2026",
+ "timestampMillis": "1791858267019",
+ "buildStep": {
+  "cmdId": "61d4f6e6-8e51-45db-b3c2-e77c55e713b5",
+  "name": "vitis-run",
+  "logFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir128_bitwidth_hls/fir128_bitwidth_hls/logs/fir128_bitwidth_hls.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir128_bitwidth_hls/hls_config.cfg --work_dir fir128_bitwidth_hls ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir128_bitwidth_hls/hls_config.cfg",
+   "--work_dir",
+   "fir128_bitwidth_hls"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir128_bitwidth_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct 13 04:24:27 2026",
+ "timestampMillis": "1791858267019",
+ "status": {
+  "cmdId": "61d4f6e6-8e51-45db-b3c2-e77c55e713b5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Oct 13 04:24:29 2026",
+ "timestampMillis": "1791858269412",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir.cpp",
+     "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Oct 13 04:24:29 2026",
+ "timestampMillis": "1791858269412",
+ "buildStep": {
+  "cmdId": "eee4967a-360a-4605-a1eb-b36845cc633f",
+  "name": "",
+  "logFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir128_bitwidth_hls/fir128_bitwidth_hls/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_bitwidth/fir128_bitwidth_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct 13 04:24:29 2026",
+ "timestampMillis": "1791858269413",
+ "status": {
+  "cmdId": "eee4967a-360a-4605-a1eb-b36845cc633f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct 13 04:24:30 2026",
+ "timestampMillis": "1791858270499",
+ "status": {
+  "cmdId": "eee4967a-360a-4605-a1eb-b36845cc633f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct 13 04:24:30 2026",
+ "timestampMillis": "1791858270632",
+ "status": {
+  "cmdId": "61d4f6e6-8e51-45db-b3c2-e77c55e713b5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Oct 13 04:24:30 2026",
+ "timestampMillis": "1791858270633",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Oct 13 04:24:30 2026",
+ "timestampMillis": "1791858270633",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
