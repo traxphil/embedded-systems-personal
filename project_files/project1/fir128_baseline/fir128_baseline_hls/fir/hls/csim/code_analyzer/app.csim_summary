@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir128_baseline_hls/fir/hls/csim/code_analyzer/app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Oct 13 03:02:19 2026",
+ "timestampMillis": "1791853339871",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Oct 13 03:02:19 2026",
+ "timestampMillis": "1791853339872",
+ "buildStep": {
+  "cmdId": "bcbbab3b-c6a1-11f1-8f08-000c29498155",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct 13 03:02:19 2026",
+ "timestampMillis": "1791853339872",
+ "status": {
+  "cmdId": "bcbbab3b-c6a1-11f1-8f08-000c29498155",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct 13 03:02:21 2026",
+ "timestampMillis": "1791853341403",
+ "status": {
+  "cmdId": "bcbbab3b-c6a1-11f1-8f08-000c29498155",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Oct 13 03:02:21 2026",
+ "timestampMillis": "1791853341404",
+ "report": {
+  "path": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir128_baseline_hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "bcbbab3b-c6a1-11f1-8f08-000c29498155"
+ }
+}
+</ENTRY>

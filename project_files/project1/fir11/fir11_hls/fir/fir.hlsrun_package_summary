@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/fir.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Oct 10 05:57:03 2026",
+ "timestampMillis": "1791604623458",
+ "buildStep": {
+  "cmdId": "a8e1b29b-bf72-442d-ad77-0a04db491269",
+  "name": "vitis-run",
+  "logFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/logs/fir.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/hls_config.cfg --work_dir fir ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/hls_config.cfg",
+   "--work_dir",
+   "fir"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 10 05:57:03 2026",
+ "timestampMillis": "1791604623459",
+ "status": {
+  "cmdId": "a8e1b29b-bf72-442d-ad77-0a04db491269",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Oct 10 05:57:05 2026",
+ "timestampMillis": "1791604625997",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fir",
+     "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/fir.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir.cpp",
+     "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Oct 10 05:57:05 2026",
+ "timestampMillis": "1791604625998",
+ "buildStep": {
+  "cmdId": "76227ac9-6f62-402b-82f8-5ac2d14912d7",
+  "name": "",
+  "logFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 10 05:57:05 2026",
+ "timestampMillis": "1791604625998",
+ "status": {
+  "cmdId": "76227ac9-6f62-402b-82f8-5ac2d14912d7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 10 05:57:10 2026",
+ "timestampMillis": "1791604630676",
+ "status": {
+  "cmdId": "76227ac9-6f62-402b-82f8-5ac2d14912d7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 10 05:57:10 2026",
+ "timestampMillis": "1791604630801",
+ "status": {
+  "cmdId": "a8e1b29b-bf72-442d-ad77-0a04db491269",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:57:10 2026",
+ "timestampMillis": "1791604630802",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:57:10 2026",
+ "timestampMillis": "1791604630802",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

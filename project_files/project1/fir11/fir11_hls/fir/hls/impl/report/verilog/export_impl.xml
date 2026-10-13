@@ -1,0 +1,139 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>4.787</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>4.787</CP_FINAL>
+    <CP_ROUTE>4.787</CP_ROUTE>
+    <CP_SYNTH>3.884</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>5.213</SLACK_FINAL>
+    <SLACK_ROUTE>5.213</SLACK_ROUTE>
+    <SLACK_SYNTH>6.116</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>0.000</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>5.213</WNS_FINAL>
+    <WNS_ROUTE>5.213</WNS_ROUTE>
+    <WNS_SYNTH>6.243</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>2</BRAM>
+      <CLB>0</CLB>
+      <DSP>2</DSP>
+      <FF>323</FF>
+      <LATCH>0</LATCH>
+      <LUT>150</LUT>
+      <SLICE>84</SLICE>
+      <SRL>2</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <SLICE>13300</SLICE>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="fir" DISPNAME="inst" RTLNAME="fir">
+      <SubModules count="1">grp_fir_Pipeline_Shift_Accum_Loop_fu_55</SubModules>
+      <Resources BRAM="2" DSP="2" FF="323" LUT="150"/>
+      <LocalResources FF="129" LUT="61"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_Pipeline_Shift_Accum_Loop_fu_55" DEPTH="1" TYPE="function" MODULENAME="fir_Pipeline_Shift_Accum_Loop" DISPNAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55" RTLNAME="fir_fir_Pipeline_Shift_Accum_Loop">
+      <SubModules count="3">flow_control_loop_pipe_sequential_init_U mul_11s_32s_32_2_1_U1 shift_reg_U</SubModules>
+      <Resources BRAM="2" DSP="2" FF="194" LUT="89"/>
+      <LocalResources DSP="1" FF="192" LUT="68"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_Pipeline_Shift_Accum_Loop_fu_55/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="fir_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="20"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_11s_32s_32_2_1_U1" DEPTH="2" TYPE="resource" MODULENAME="mul_11s_32s_32_2_1" DISPNAME="mul_11s_32s_32_2_1_U1" RTLNAME="fir_mul_11s_32s_32_2_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="Shift_Accum_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_11s_32s_32_2_1_U1" SOURCE="../fir.cpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln35" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U" DEPTH="2" TYPE="resource" MODULENAME="fir_Pipeline_Shift_Accum_Loop_shift_reg_RAM_AUTO_1R1W" DISPNAME="shift_reg_U" RTLNAME="fir_fir_Pipeline_Shift_Accum_Loop_shift_reg_RAM_AUTO_1R1W">
+      <Resources BRAM="2" LUT="1"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="shift_reg_U" SOURCE="" STORAGESIZE="32 11 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p" URAM="0" VARIABLE="shift_reg" VISIBLE="true"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="4.341" DATAPATH_LOGIC_DELAY="2.454" DATAPATH_NET_DELAY="1.887" ENDPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg/A[23]" LOGIC_LEVELS="0" MAX_FANOUT="17" SLACK="5.213" STARTPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg/CLKARDCLK">
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop_shift_reg_RAM_AUTO_1R1W.v" LINE_NUMBER="38" MODULE_INSTNAME="shift_reg_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop.v" LINE_NUMBER="279" MODULE_INSTNAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>shift_reg_U grp_fir_Pipeline_Shift_Accum_Loop_fu_55</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.182" DATAPATH_LOGIC_DELAY="2.454" DATAPATH_NET_DELAY="1.728" ENDPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg/A[27]" LOGIC_LEVELS="0" MAX_FANOUT="17" SLACK="5.372" STARTPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg/CLKARDCLK">
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop_shift_reg_RAM_AUTO_1R1W.v" LINE_NUMBER="38" MODULE_INSTNAME="shift_reg_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop.v" LINE_NUMBER="279" MODULE_INSTNAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>shift_reg_U grp_fir_Pipeline_Shift_Accum_Loop_fu_55</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.151" DATAPATH_LOGIC_DELAY="2.454" DATAPATH_NET_DELAY="1.697" ENDPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg/A[20]" LOGIC_LEVELS="0" MAX_FANOUT="17" SLACK="5.403" STARTPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg/CLKARDCLK">
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop_shift_reg_RAM_AUTO_1R1W.v" LINE_NUMBER="38" MODULE_INSTNAME="shift_reg_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop.v" LINE_NUMBER="279" MODULE_INSTNAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>shift_reg_U grp_fir_Pipeline_Shift_Accum_Loop_fu_55</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.151" DATAPATH_LOGIC_DELAY="2.454" DATAPATH_NET_DELAY="1.697" ENDPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg/A[21]" LOGIC_LEVELS="0" MAX_FANOUT="17" SLACK="5.403" STARTPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg/CLKARDCLK">
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop_shift_reg_RAM_AUTO_1R1W.v" LINE_NUMBER="38" MODULE_INSTNAME="shift_reg_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop.v" LINE_NUMBER="279" MODULE_INSTNAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>shift_reg_U grp_fir_Pipeline_Shift_Accum_Loop_fu_55</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.151" DATAPATH_LOGIC_DELAY="2.454" DATAPATH_NET_DELAY="1.697" ENDPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg/A[22]" LOGIC_LEVELS="0" MAX_FANOUT="17" SLACK="5.403" STARTPOINT_PIN="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg/CLKARDCLK">
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/shift_reg_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB36E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop_shift_reg_RAM_AUTO_1R1W.v" LINE_NUMBER="38" MODULE_INSTNAME="shift_reg_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55/mul_ln35_reg_232_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="fir_fir_Pipeline_Shift_Accum_Loop.v" LINE_NUMBER="279" MODULE_INSTNAME="grp_fir_Pipeline_Shift_Accum_Loop_fu_55" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>shift_reg_U grp_fir_Pipeline_Shift_Accum_Loop_fu_55</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/fir_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/fir_failfast_routed.rpt"/>
+    <ReportFile TYPE="power" PATH="verilog/report/fir_power_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="verilog/report/fir_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/fir_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/fir_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/fir_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/fir_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sat Oct 10 07:17:22 CEST 2026"/>
+    <item NAME="Version" VALUE="2024.2 (Build 5238294 on Nov  8 2024)"/>
+    <item NAME="Project" VALUE="fir"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg400-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="auto"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

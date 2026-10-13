@@ -1,0 +1,227 @@
+<ENTRY>
+{
+ "thisFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/fir.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Oct 10 05:56:14 2026",
+ "timestampMillis": "1791604574340",
+ "buildStep": {
+  "cmdId": "9a62d9e4-55ea-4207-9d91-49765fa2776e",
+  "name": "vitis-run",
+  "logFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/logs/fir.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --cosim --config /home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/hls_config.cfg --work_dir fir ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/hls_config.cfg",
+   "--work_dir",
+   "fir"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 10 05:56:14 2026",
+ "timestampMillis": "1791604574340",
+ "status": {
+  "cmdId": "9a62d9e4-55ea-4207-9d91-49765fa2776e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Oct 10 05:56:17 2026",
+ "timestampMillis": "1791604577634",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fir",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir.cpp",
+     "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Oct 10 05:56:17 2026",
+ "timestampMillis": "1791604577635",
+ "buildStep": {
+  "cmdId": "d63d3ce1-9573-4557-93a6-2b5d006b6d89",
+  "name": "",
+  "logFile": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 10 05:56:17 2026",
+ "timestampMillis": "1791604577635",
+ "status": {
+  "cmdId": "d63d3ce1-9573-4557-93a6-2b5d006b6d89",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:56:17 2026",
+ "timestampMillis": "1791604577635",
+ "report": {
+  "path": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/hls/sim/report/fir_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:56:17 2026",
+ "timestampMillis": "1791604577636",
+ "report": {
+  "path": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:56:17 2026",
+ "timestampMillis": "1791604577636",
+ "report": {
+  "path": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:56:17 2026",
+ "timestampMillis": "1791604577636",
+ "report": {
+  "path": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:56:17 2026",
+ "timestampMillis": "1791604577636",
+ "report": {
+  "path": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir11/fir11_hls/fir/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 10 05:56:27 2026",
+ "timestampMillis": "1791604587608",
+ "status": {
+  "cmdId": "d63d3ce1-9573-4557-93a6-2b5d006b6d89",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 10 05:56:27 2026",
+ "timestampMillis": "1791604587742",
+ "status": {
+  "cmdId": "9a62d9e4-55ea-4207-9d91-49765fa2776e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:56:27 2026",
+ "timestampMillis": "1791604587743",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 10 05:56:27 2026",
+ "timestampMillis": "1791604587743",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

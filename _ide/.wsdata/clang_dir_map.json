@@ -1,0 +1,10 @@
+{
+  "workspaceRoot": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs",
+  "mapping": {
+    "project_files/project1/fir11/fir.h": "project_files/project1/fir11/fir11_hls",
+    "project_files/project1/fir11/input.dat": "project_files/project1/fir11/fir11_hls",
+    "project_files/project1/fir11/fir.cpp": "project_files/project1/fir11/fir11_hls",
+    "project_files/project1/fir11/out.gold.dat": "project_files/project1/fir11/fir11_hls",
+    "project_files/project1/fir11/fir_test.cpp": "project_files/project1/fir11/fir11_hls"
+  }
+}

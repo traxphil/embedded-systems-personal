@@ -1,0 +1,658 @@
+[
+    {
+        "name": "_Z3firPii",
+        "df_function": "%F207",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 15,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 42,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 15,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 42,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 fir) BB 'codeRepl' [Atomic,Call,Atomic] 'Outline_T3_F207_R2_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 21,
+                        "column": 9
+                    },
+                    "end_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 21,
+                        "column": 9
+                    }
+                },
+                "display_name": "llvm.memcpy.p0i8.p0i8.i64()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                    "line": 21,
+                                    "column": 9
+                                },
+                                "id": "VId_12_[?(?,32)]",
+                                "name": "c[*]",
+                                "display_name": "coef_t c[128]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 21,
+                                        "column": 9
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F208_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                "line": 21,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                "line": 21,
+                                "column": 9
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F208_R2",
+                        "description": "<call 'llvm.memcpy.p0i8.p0i8.i64'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                "line": 21,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                "line": 21,
+                                "column": 9
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F208_R3",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": []
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 fir) BB 'codeRepl1' [Atomic,Loop,Atomic] 'Outline_T4_F207_R3_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 31,
+                        "column": 2
+                    },
+                    "end_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 39,
+                        "column": 2
+                    }
+                },
+                "display_name": "Shift_Accum_Loop",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                    "line": 21,
+                                    "column": 9
+                                },
+                                "id": "VId_12_[?(?,32)]",
+                                "name": "c[*]",
+                                "display_name": "coef_t c[128]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 33,
+                                        "column": 15
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 128
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 512,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 37,
+                                        "column": 26
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 128
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                    "line": 26,
+                                    "column": 0
+                                },
+                                "id": "VId_17_!c?(?,?)",
+                                "name": "acc",
+                                "display_name": "acc_t acc"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                    "line": 17,
+                                    "column": 0
+                                },
+                                "id": "VId_11_!c?(?,?)",
+                                "name": "x",
+                                "display_name": "data_t x"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                    "line": 25,
+                                    "column": 0
+                                },
+                                "id": "VId_2_[?(?,32)]",
+                                "name": "shift_reg[*]",
+                                "display_name": "data_t shift_reg[128]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 17179869184,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 36,
+                                        "column": 19
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 128
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 34,
+                                        "column": 17
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 128
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 512,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 36,
+                                        "column": 17
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 128
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F209_R1",
+                        "description": "<function entry>"
+                    },
+                    {
+                        "id": "%F209_R2",
+                        "description": "<loop 'Shift_Accum_Loop'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                "line": 31,
+                                "column": 2
+                            },
+                            "end_loc": {
+                                "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                "line": 39,
+                                "column": 2
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F209_R8",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": []
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 fir) BB 'codeRepl2' [Atomic] 'Outline_T5_F207_R19_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 40,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                        "line": 40,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                    "line": 26,
+                                    "column": 0
+                                },
+                                "id": "VId_17_!c?(?,?)",
+                                "name": "acc",
+                                "display_name": "acc_t acc"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                    "line": 16,
+                                    "column": 0
+                                },
+                                "id": "VId_10_*0(0,32)arg",
+                                "name": "(*y)",
+                                "display_name": "data_t *y"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                        "line": 40,
+                                        "column": 5
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F210_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                "line": 40,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                                "line": 40,
+                                "column": 5
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            }
+        },
+        "channels": {
+            "x_RAW_1_4_#0": {
+                "name": "x_RAW_1_4_#0",
+                "variable_id": "VId_11_!c?(?,?)",
+                "variable_name": "x",
+                "declaration": "data_t x",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                    "line": 17,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "c[*]_RAW_3_4_#1": {
+                "name": "c[*]_RAW_3_4_#1",
+                "variable_id": "VId_12_[?(?,32)]",
+                "variable_name": "c[*]",
+                "declaration": "coef_t c[128]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                    "line": 21,
+                    "column": 9
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "shift_reg[*]_RAW_1_4_#2": {
+                "name": "shift_reg[*]_RAW_1_4_#2",
+                "variable_id": "VId_2_[?(?,32)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[128]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                    "line": 25,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "shift_reg[*]_WAW_1_4_#3": {
+                "name": "shift_reg[*]_WAW_1_4_#3",
+                "variable_id": "VId_2_[?(?,32)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[128]",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                    "line": 25,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "acc_RAW_4_5_#4": {
+                "name": "acc_RAW_4_5_#4",
+                "variable_id": "VId_17_!c?(?,?)",
+                "variable_name": "acc",
+                "declaration": "acc_t acc",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                    "line": 26,
+                    "column": 0
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "(*y)_RAW_5_2_#5": {
+                "name": "(*y)_RAW_5_2_#5",
+                "variable_id": "VId_10_*0(0,32)arg",
+                "variable_name": "(*y)",
+                "declaration": "data_t *y",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                    "line": 16,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "shift_reg[*]_RAW_4_2_#6": {
+                "name": "shift_reg[*]_RAW_4_2_#6",
+                "variable_id": "VId_2_[?(?,32)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[128]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                    "line": 25,
+                    "column": 0
+                },
+                "source": "4",
+                "sink": "2"
+            },
+            "shift_reg[*]_RAR_4_2_#7": {
+                "name": "shift_reg[*]_RAR_4_2_#7",
+                "variable_id": "VId_2_[?(?,32)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[128]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_baseline/fir.cpp",
+                    "line": 25,
+                    "column": 0
+                },
+                "source": "4",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "5",
+                "sink": "2"
+            }
+        ]
+    }
+]
