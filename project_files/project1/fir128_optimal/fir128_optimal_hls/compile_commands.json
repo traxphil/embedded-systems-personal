@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_optimal/fir128_optimal_hls",
+    "arguments": [
+      "/tools/Xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/tools/Xilinx/Vitis/2024.2/common/technology/autopilot",
+      "-fhlstoplevel=fir",
+      "-c",
+      "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_optimal/fir.cpp"
+    ],
+    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_optimal/fir.cpp"
+  },
+  {
+    "directory": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_optimal/fir128_optimal_hls",
+    "arguments": [
+      "/tools/Xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/tools/Xilinx/Vitis/2024.2/include",
+      "-c",
+      "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_optimal/fir_test.cpp"
+    ],
+    "file": "/home/traxphil/Workspace/UCSD/embedded_personal/Read_the_docs/project_files/project1/fir128_optimal/fir_test.cpp"
+  }
+]
