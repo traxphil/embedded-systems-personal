@@ -29,6 +29,7 @@ void fir (
 	acc = 0;
 	Shift_Accum_Loop:
 	for (i = N - 1; i > 0; i--){
+        // #pragma HLS pipeline off (deactivated for the submission)
         shift_reg[i] = shift_reg[i - 1];
         acc += shift_reg[i] * c[i];
 	}
