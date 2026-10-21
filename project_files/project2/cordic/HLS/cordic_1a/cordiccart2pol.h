@@ -1,7 +1,7 @@
 #ifndef CORDICCART2POL_H
 #define CORDICCART2POL_H
 
-#define NO_ITER 16
+#define NO_ITER 20
 
 typedef int   coef_t;
 typedef float data_t;
