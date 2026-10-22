@@ -5,7 +5,7 @@
 
 #define DEBUG 0
 
-typedef ap_fixed<8,3> data_t; // Data type of a value in the LUT
+typedef ap_fixed<4,3> data_t; // Data type of a value in the LUT
 
 #define W			8  // Total size of fixed-point representation
 #define I			2  // Number of integer bits of fixed-point representation
