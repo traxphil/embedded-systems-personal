@@ -66,4 +66,5 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
     // Undo the cordic scaling for r
 	// uses the same 32-bit fixed-to-float conversion as theta instead of a 64-bit one
     const cordic_t r_fixed = cur_x * gain_inverse[NO_ITER - 1];
+	*r = r_fixed;
 }
