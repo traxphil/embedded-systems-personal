@@ -27,11 +27,28 @@ include $(dir $(GEN_TCL))boards.mk
 
 #$(warning $(EXAMPLES_LOG))
 
+## ADDITION:
+# LUT contents are generated on the host; rebuilt whenever W / I / data_t change in the header
+LUT_INC = lut_r.inc lut_th.inc
+
+$(LUT_INC) &: generate_lut.cpp $(TOP).h
+	$(CXX) -I$(VHLS)/include generate_lut.cpp -o generate_lut.bin
+	./generate_lut.bin
+
+$(TOP)_test.bin $(HLS_SCRIPT): $(LUT_INC) $(TOP).h
+
+clean: clean-lut
+clean-lut:
+	rm -f $(LUT_INC) generate_lut.bin
+
+.PHONY: clean-lut
+## END ADDITION
+
 %.o: %.cpp
 	$(CXX) -I$(VHLS)/include -c $< -o $@
 
 %_test.bin: %_test.cpp %.cpp 
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH) $(CXX) -I$(VHLS)/include $? -g -o $@
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH) $(CXX) -I$(VHLS)/include $(filter %.cpp,$^) -g -o $@
 
 #  missing cos_table and sin_table definition. No testbench files available
 #	dft.c \
