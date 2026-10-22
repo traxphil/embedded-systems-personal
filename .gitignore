@@ -9,3 +9,11 @@ out.dat
 workspace/
 project_*/
 !project_files/
+
+# keep hand-saved sweep results (e.g. cordic_2b/16_rpt/)
+!**/*_rpt/*.rpt
+!**/*_rpt/*.log
+
+# generated LUT contents (make rebuilds them from generate_lut.cpp)
+lut_*.inc
+generate_lut.bin
