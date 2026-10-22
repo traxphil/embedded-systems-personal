@@ -5,7 +5,7 @@
 
 // custom AP data type definitions decoupled from the default header
 // Variable settings
-#define TOTAL_bits 20
+#define TOTAL_bits 32
 #define INT_bits 3
 
 using cordic_t = ap_fixed<TOTAL_bits, INT_bits>;        // internal x, y, r, theta
