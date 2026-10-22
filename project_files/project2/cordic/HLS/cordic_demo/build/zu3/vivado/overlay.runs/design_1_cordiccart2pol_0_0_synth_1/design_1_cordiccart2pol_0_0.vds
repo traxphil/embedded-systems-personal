@@ -1,0 +1,420 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Oct 22 09:48:20 2026
+# Process ID         : 35749
+# Current directory  : /home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.runs/design_1_cordiccart2pol_0_0_synth_1
+# Command line       : vivado -log design_1_cordiccart2pol_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cordiccart2pol_0_0.tcl
+# Log file           : /home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.runs/design_1_cordiccart2pol_0_0_synth_1/design_1_cordiccart2pol_0_0.vds
+# Journal file       : /home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.runs/design_1_cordiccart2pol_0_0_synth_1/vivado.jou
+# Running On         : traxphil-VMware-Virtual-Platform
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 255H
+# CPU Frequency      : 3686.398 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 27274 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 31569 MB
+# Available Virtual  : 21745 MB
+#-----------------------------------------------------------
+source design_1_cordiccart2pol_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/cordiccart2pol_zu3.comp/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cordiccart2pol_0_0
+Command: synth_design -top design_1_cordiccart2pol_0_0 -part xczu3eg-sfvc784-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35968
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2344.336 ; gain = 122.688 ; free physical = 2161 ; free virtual = 14619
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_cordiccart2pol_0_0' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ip/design_1_cordiccart2pol_0_0/synth/design_1_cordiccart2pol_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1_angles_ROM_AUTO_1R' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1_angles_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1_angles_ROM_AUTO_1R.dat' is read successfully [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1_angles_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1_angles_ROM_AUTO_1R' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1_angles_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_flow_control_loop_pipe_sequential_init' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_flow_control_loop_pipe_sequential_init' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_cordiccart2pol_Pipeline_VITIS_LOOP_53_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_control_s_axi' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_control_s_axi.v:233]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_control_s_axi' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/ip/cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84087]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84087]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/ip/cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_mul_32s_30ns_61_1_1' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_mul_32s_30ns_61_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_mul_32s_30ns_61_1_1' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_mul_32s_30ns_61_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_sparsemux_9_3_32_1_1' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_sparsemux_9_3_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_sparsemux_9_3_32_1_1' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_sparsemux_9_3_32_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_ctlz_32_32_1_1' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_ctlz_32_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_ctlz_32_32_1_1' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_ctlz_32_32_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cordiccart2pol_bitselect_1ns_32ns_32s_1_1_1' [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_bitselect_1ns_32ns_32s_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol_bitselect_1ns_32ns_32s_1_1_1' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_bitselect_1ns_32ns_32s_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cordiccart2pol' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cordiccart2pol_0_0' (0#1) [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ip/design_1_cordiccart2pol_0_0/synth/design_1_cordiccart2pol_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ipshared/c8b5/hdl/verilog/cordiccart2pol_control_s_axi.v:310]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tvalid in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[31] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[30] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[29] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[28] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[27] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[26] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[25] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[24] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[23] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[22] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[21] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[20] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[19] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[18] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[17] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[16] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[15] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[14] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[13] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[12] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[11] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[10] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[9] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[8] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[7] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[6] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[5] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[4] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[3] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[2] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[1] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[0] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_19_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_19_viv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2478.273 ; gain = 256.625 ; free physical = 1814 ; free virtual = 14275
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2478.273 ; gain = 256.625 ; free physical = 1806 ; free virtual = 14267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2478.273 ; gain = 256.625 ; free physical = 1806 ; free virtual = 14267
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2486.273 ; gain = 0.000 ; free physical = 1790 ; free virtual = 14251
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ip/design_1_cordiccart2pol_0_0/constraints/cordiccart2pol_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.gen/sources_1/bd/design_1/ip/design_1_cordiccart2pol_0_0/constraints/cordiccart2pol_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.runs/design_1_cordiccart2pol_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.runs/design_1_cordiccart2pol_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2602.180 ; gain = 0.000 ; free physical = 1767 ; free virtual = 14227
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2602.180 ; gain = 0.000 ; free physical = 1767 ; free virtual = 14227
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2602.180 ; gain = 380.531 ; free physical = 1693 ; free virtual = 14155
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2610.184 ; gain = 388.535 ; free physical = 1693 ; free virtual = 14155
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.runs/design_1_cordiccart2pol_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2610.184 ; gain = 388.535 ; free physical = 1684 ; free virtual = 14146
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'cordiccart2pol_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'cordiccart2pol_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'cordiccart2pol_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'cordiccart2pol_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2610.184 ; gain = 388.535 ; free physical = 1583 ; free virtual = 14046
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1:/cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1:/cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1:/cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1:/cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1:/cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'cordiccart2pol_fpext_32ns_64_2_no_dsp_1:/cordiccart2pol_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module cordiccart2pol_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module cordiccart2pol_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2626.191 ; gain = 404.543 ; free physical = 303 ; free virtual = 12565
+---------------------------------------------------------------------------------
+ Sort Area is  mul_32s_30ns_61_1_1_U9/tmp_product_0 : 0 0 : 1650 3490 : Used 1 time 0
+ Sort Area is  mul_32s_30ns_61_1_1_U9/tmp_product_0 : 0 1 : 1840 3490 : Used 1 time 0
+ Sort Area is  mul_32s_30ns_61_1_1_U9/tmp_product_3 : 0 0 : 1120 2689 : Used 1 time 0
+ Sort Area is  mul_32s_30ns_61_1_1_U9/tmp_product_3 : 0 1 : 1569 2689 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 3188.195 ; gain = 966.547 ; free physical = 1492 ; free virtual = 13592
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 3242.789 ; gain = 1021.141 ; free physical = 6878 ; free virtual = 18977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 3258.805 ; gain = 1037.156 ; free physical = 6859 ; free virtual = 18958
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3365.617 ; gain = 1143.969 ; free physical = 6785 ; free virtual = 18884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3365.617 ; gain = 1143.969 ; free physical = 6785 ; free virtual = 18884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3365.617 ; gain = 1143.969 ; free physical = 6785 ; free virtual = 18884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3365.617 ; gain = 1143.969 ; free physical = 6785 ; free virtual = 18884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3365.617 ; gain = 1143.969 ; free physical = 6785 ; free virtual = 18884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3365.617 ; gain = 1143.969 ; free physical = 6785 ; free virtual = 18884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cordiccart2pol | A'*B          | 30     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|cordiccart2pol | PCIN>>17+A'*B | 30     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|cordiccart2pol | A'*B          | 17     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|cordiccart2pol | PCIN>>17+A*B  | 0      | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    68|
+|2     |DSP_ALU         |     4|
+|3     |DSP_A_B_DATA    |     4|
+|4     |DSP_C_DATA      |     4|
+|5     |DSP_MULTIPLIER  |     4|
+|6     |DSP_M_DATA      |     4|
+|7     |DSP_OUTPUT      |     4|
+|8     |DSP_PREADD      |     4|
+|9     |DSP_PREADD_DATA |     4|
+|10    |LUT1            |   204|
+|11    |LUT2            |   346|
+|12    |LUT3            |   304|
+|13    |LUT4            |   229|
+|14    |LUT5            |   569|
+|15    |LUT6            |   874|
+|16    |MUXCY           |     8|
+|17    |MUXF7           |     7|
+|18    |FDRE            |   657|
+|19    |FDSE            |    12|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3365.617 ; gain = 1143.969 ; free physical = 6785 ; free virtual = 18884
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 120 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 3365.617 ; gain = 1020.062 ; free physical = 6790 ; free virtual = 18888
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3365.617 ; gain = 1143.969 ; free physical = 6790 ; free virtual = 18888
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3365.617 ; gain = 0.000 ; free physical = 6949 ; free virtual = 19047
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3365.617 ; gain = 0.000 ; free physical = 6934 ; free virtual = 19032
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  (CARRY4) => CARRY8: 2 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+
+Synth Design complete | Checksum: 4c999ca2
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3365.617 ; gain = 1887.496 ; free physical = 6934 ; free virtual = 19032
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2530.884; main = 2530.884; forked = 210.038
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3879.121; main = 3347.816; forked = 919.477
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3371.824 ; gain = 0.000 ; free physical = 6934 ; free virtual = 19032
+INFO: [Common 17-1381] The checkpoint '/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.runs/design_1_cordiccart2pol_0_0_synth_1/design_1_cordiccart2pol_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_cordiccart2pol_0_0, cache-ID = 107441d244903c4e
+INFO: [Coretcl 2-1174] Renamed 30 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3371.824 ; gain = 0.000 ; free physical = 6937 ; free virtual = 19040
+INFO: [Common 17-1381] The checkpoint '/home/traxphil/Workspace/UCSD/embedded_personal/main_folder/project_files/project2/cordic/HLS/cordic_demo/build/zu3/vivado/overlay.runs/design_1_cordiccart2pol_0_0_synth_1/design_1_cordiccart2pol_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_cordiccart2pol_0_0_utilization_synth.rpt -pb design_1_cordiccart2pol_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 09:49:13 2026...
