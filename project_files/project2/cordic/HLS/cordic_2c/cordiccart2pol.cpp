@@ -3,8 +3,8 @@
 
 #define SZ 20
 
-// Fixed-point types are defined here, so the function interface in cordiccart2pol.h stays float.
-// Variable settings (only the type of the CORDIC tables is varied)
+// Fixed-point types are defined here: function interface in cordiccart2pol.h stays float.
+// Variable settings (only vary table data type)
 #define TOTAL_bits 32
 #define INT_bits 2      // sign bit + 1 bit: all table values are <= 1
 
@@ -28,11 +28,11 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
     cordic_t cur_theta;     // accumulation of rotation angles
 
     // Handle quadrant 2 and quadrant 3 starting points (+/- 90 degree rotation)
-    if (y_in > 0) {         // q1, q2: rotate by -90 degrees
+    if (y_in > 0) {         // q1, q2: rotate by -90°
         cur_x = y_in;
         cur_y = -x_in;
         cur_theta = 1.57079632679490;
-    } else {                // q3, q4: rotate by +90 degrees
+    } else {                // q3, q4: rotate by +90°
         cur_x = -y_in;
         cur_y = x_in;
         cur_theta = -1.57079632679490;
@@ -54,8 +54,7 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
         cur_theta -= angles[i] * sigma;
     }
 
-    // Undo the CORDIC gain in fixed point (same type as theta), then convert both results to float.
-    // 0.6072529350088813 = prod_{i>=0} 1/sqrt(1 + 2^(-2i)), the inverse CORDIC gain (pp4fpgas, Chapter 3)
+    // Undo the CORDIC gain in ap_fixed (same type as theta), then convert both results to float after completion
     const cordic_t r_fixed = cur_x * (cordic_t)0.6072529350088813;
     *theta = cur_theta;
     *r = r_fixed;
